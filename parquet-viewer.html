@@ -1218,6 +1218,17 @@
   }
   .stack { display: flex; flex-direction: column; gap: 1px; }
   .none { font-size: 13px; color: var(--cds-text-secondary); }
+  /* A note in the panel, in the same card that the rail gives Help. The
+     negative margin extends it past the padding of the section that holds
+     it, so it reads as one band across the panel. */
+  /* Two classes, because ".sect p" also sets a margin and would otherwise
+     win on specificity and hold the card inside the padding. */
+  .sect .pnote {
+    margin: 0 -16px; padding: 12px 14px;
+    background: var(--cds-layer-02);
+    border-inline-start: 3px solid var(--cds-border-subtle-01);
+    font-size: 14px; line-height: 1.5; color: var(--cds-text-secondary);
+  }
   .bars { display: flex; flex-direction: column; gap: 6px; }
   .bar2 { display: flex; align-items: center; gap: 8px; font-size: 13px; }
   .bar2 .sw { inline-size: 10px; block-size: 10px; flex: none; }
@@ -1336,17 +1347,15 @@
         </cds-accordion-item>
 
         <cds-accordion-item title="Help">
-          <div class="pad">
-            <p class="note">
-              The viewer reads only the footer of each file first. A footer is
-              a few kilobytes, so a folder of shards opens quickly.
-            </p>
-            <p class="note">
-              The viewer reads a page of rows when you ask for it, and only
-              the columns on show. It skips the rest of the file, and your
-              files stay in this browser tab.
-            </p>
-          </div>
+          <p class="note">
+            The viewer reads only the footer of each file first. A footer is
+            a few kilobytes, so a folder of shards opens quickly.
+          </p>
+          <p class="note">
+            The viewer reads a page of rows when you ask for it, and only the
+            columns on show. It skips the rest of the file, and your files
+            stay in this browser tab.
+          </p>
         </cds-accordion-item>
 
       </cds-accordion>
@@ -4162,7 +4171,7 @@ vmbCnCfH5TJKTBFva0O4Wl+l/Ix13xO6KCJPD5H51fete+aO/R8EyzZRoN8BAA==`,At;function Lr
       return '<button class="lnk" data-field="' + esc(f.name) + '"><span class="nm">' +
              esc(f.name) + '</span><span class="ct mono">' + esc(f.type) + "</span></button>";
     }).join("") + "</div>");
-    out += sect("Reading a row", '<p>Click a row for every value it holds. Click a column head for its type and its statistics.</p>');
+    out += sect("Reading a row", '<p class="pnote">Click a row for every value it holds. Click a column head for its type and its statistics.</p>');
     return out;
   }
 
@@ -4268,7 +4277,7 @@ vmbCnCfH5TJKTBFva0O4Wl+l/Ix13xO6KCJPD5H51fete+aO/R8EyzZRoN8BAA==`,At;function Lr
       out += sect(path === name ? "The column" : path, rows2(pairs));
     });
     out += sect("Source",
-      '<p>Every figure above is read from the footers of the files. No row of the dataset was read to produce it.</p>');
+      '<p class="pnote">Every figure above is read from the footers of the files. No row of the dataset was read to produce it.</p>');
     return out;
   }
 
