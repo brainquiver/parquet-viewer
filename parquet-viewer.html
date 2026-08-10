@@ -15,11 +15,14 @@
      network. It is built on Carbon, and the design system's components and
      tokens are bundled in the same way. Everything that is opened stays in
      the page. -->
-<!-- The mark, drawn from the OKF Graph mark. It is embedded, so the file
-     keeps its own icon when a person moves the file alone. The
-     icons/favicon.ico file beside it serves anything that needs a real
-     icon file. -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yNiAtMjYgNjUyIDY1MiI+PHJlY3QgeD0iLTI2IiB5PSItMjYiIHdpZHRoPSI2NTIiIGhlaWdodD0iNjUyIiBmaWxsPSIjMTYxNjE2Ii8+PHBhdGggZD0iTTUzMCA3MEw1MzAgMjMwUTUzMCAzMDAgNDYwIDMwMEwzMDAgMzAwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmNGY0ZjQiIHN0cm9rZS13aWR0aD0iNDQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik03MCA3MEwyMzAgNzBRMzAwIDcwIDMwMCAxNDBMMzAwIDMwMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjRmNGY0IiBzdHJva2Utd2lkdGg9IjQ0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48cGF0aCBkPSJNMzAwIDMwMEwzMDAgNTMwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmNGY0ZjQiIHN0cm9rZS13aWR0aD0iNDQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik01MzAgNTMwTDcwIDUzMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjRmNGY0IiBzdHJva2Utd2lkdGg9IjQ0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz48Y2lyY2xlIGN4PSI1MzAiIGN5PSI3MCIgcj0iNjAiIGZpbGw9IiNmMWMyMWIiIHN0cm9rZT0iI2Y0ZjRmNCIgc3Ryb2tlLXdpZHRoPSI0NCIvPjxjaXJjbGUgY3g9IjcwIiBjeT0iNzAiIHI9IjYwIiBmaWxsPSIjZmY4Mzg5IiBzdHJva2U9IiNmNGY0ZjQiIHN0cm9rZS13aWR0aD0iNDQiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSIzMDAiIHI9IjYwIiBmaWxsPSIjZmY4Mzg5IiBzdHJva2U9IiNmNGY0ZjQiIHN0cm9rZS13aWR0aD0iNDQiLz48Y2lyY2xlIGN4PSI1MzAiIGN5PSI1MzAiIHI9IjYwIiBmaWxsPSIjNzhhOWZmIiBzdHJva2U9IiNmNGY0ZjQiIHN0cm9rZS13aWR0aD0iNDQiLz48Y2lyY2xlIGN4PSI3MCIgY3k9IjUzMCIgcj0iNjAiIGZpbGw9IiNmZmZmZmYiIHN0cm9rZT0iI2Y0ZjRmNCIgc3Ryb2tlLXdpZHRoPSI0NCIvPjwvc3ZnPg==">
+<!-- The mark: a column store, drawn in the style of the OKF Graph
+     mark. One base line, three columns that stand on it, and a node at
+     the head of each, on the same grid, at the same weight, in the same
+     four colours. It is embedded so the file keeps its own icon when
+     it is moved alone. icons/favicon.ico beside it serves anything that
+     needs a real icon file. -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yNiAtMjYgNjUyIDY1MiI+PHJlY3QgeD0iLTI2IiB5PSItMjYiIHdpZHRoPSI2NTIiIGhlaWdodD0iNjUyIiBmaWxsPSIjMTYxNjE2Ii8+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZjRmNGY0IiBzdHJva2Utd2lkdGg9IjQ0IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjxwYXRoIGQ9Ik03MCA1MzAgTDUzMCA1MzAiLz48cGF0aCBkPSJNNzAgNTMwIEw3MCAzMDAiLz48cGF0aCBkPSJNMzAwIDUzMCBMMzAwIDE0MCIvPjxwYXRoIGQ9Ik01MzAgNTMwIEw1MzAgMzgwIi8+PC9nPjxnIHN0cm9rZT0iI2Y0ZjRmNCIgc3Ryb2tlLXdpZHRoPSI0NCI+PGNpcmNsZSBjeD0iNzAiIGN5PSIzMDAiIHI9IjYwIiBmaWxsPSIjZjFjMjFiIi8+PGNpcmNsZSBjeD0iMzAwIiBjeT0iMTQwIiByPSI2MCIgZmlsbD0iI2ZmODM4OSIvPjxjaXJjbGUgY3g9IjUzMCIgY3k9IjM4MCIgcj0iNjAiIGZpbGw9IiM3OGE5ZmYiLz48Y2lyY2xlIGN4PSIzMDAiIGN5PSI1MzAiIHI9IjYwIiBmaWxsPSIjZmZmZmZmIi8+PC9nPjwvc3ZnPg==">
+<link rel="alternate icon" type="image/x-icon" href="icons/favicon.ico">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -709,7 +712,7 @@
   }
   .pad { padding-inline: 16px; display: flex; flex-direction: column; gap: 12px; }
   .rail .note {
-    margin: 4px 16px; padding: 12px;
+    margin: 4px 0; padding: 12px 14px;
     background: var(--cds-layer-02);
     border-inline-start: 3px solid var(--cds-border-subtle-01);
     font-size: var(--cds-label-01-font-size);
@@ -829,6 +832,18 @@
 
   .tscroll { flex: 1; overflow: auto; background: var(--cds-layer-01); }
 
+  /* The bar that the operating system draws differs in shape and in grey
+     from the rest of the page. On a table, the bar is the part that is
+     looked at most. These are the two properties that both engines obey.
+     The rail keeps its own hidden bar. */
+  .tscroll, .inspector, .val .v, .hits, .vw-body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--cds-border-strong-01) transparent;
+  }
+  .tscroll:hover, .inspector:hover, .val .v:hover {
+    scrollbar-color: var(--cds-text-secondary) transparent;
+  }
+
   /* Fixed layout, as wide as its columns need. Without this width, the
      table takes the width of the pane and squeezes every column into it. A
      dataset of twelve columns then shows twelve columns too narrow to read.
@@ -860,6 +875,23 @@
     margin-inline-start: 6px;
   }
   table.grid th[data-sel="1"] { box-shadow: inset 0 -2px 0 0 var(--cds-interactive); }
+  /* The edge of a heading, to pull the column wider or narrower. It is wider
+     than the line it sits on, because a target of one pixel cannot be hit. */
+  table.grid th .grip {
+    position: absolute; inset-block: 0; inset-inline-end: 0;
+    inline-size: 9px; cursor: col-resize; z-index: 4;
+  }
+  table.grid th .grip::after {
+    content: ""; position: absolute; inset-block: 6px; inset-inline-end: 4px;
+    inline-size: 1px; background: var(--cds-border-subtle-01);
+  }
+  table.grid th .grip:hover::after,
+  table.grid th .grip[data-on="1"]::after {
+    inset-block: 0; inline-size: 2px; background: var(--cds-interactive);
+  }
+  /* While a column is pulled, the pointer keeps its shape everywhere, and
+     the drag does not select anything on the page. */
+  body[data-resizing="1"] { cursor: col-resize; user-select: none; }
 
   /* The row number is a gutter, so it is quieter than the cells. It holds
      the row's number across the whole dataset. */
@@ -964,13 +996,19 @@
     font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
     font-size: 11px;
   }
+  /* A cell can hold a page of text. A long value opens at a fixed height and
+     can be pulled taller by its bottom edge. A reader can then see a whole
+     document, and the rest of the row stays in the panel. */
   .val .v {
     margin-block-start: 4px;
     font-size: 13px; line-height: 18px;
     color: var(--cds-text-primary);
     white-space: pre-wrap; overflow-wrap: anywhere;
-    max-block-size: 260px; overflow-y: auto; scrollbar-width: thin;
+    overflow: auto; min-block-size: 36px;
   }
+  /* Only a value that was cut carries the grip, because a short value is
+     already shown in full. */
+  .val .v.tall { resize: vertical; }
   .val .v.mono, .val .v.num {
     font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
     font-size: 12px;
@@ -1086,9 +1124,15 @@
     font-size: 13px;
   }
   .slist .row:first-child { border-block-start: 1px solid var(--cds-border-subtle-01); }
+  /* In the rail the list stands alone, without a section around it to give
+     it padding, so it carries the rail's own margin itself. */
+  .rail .slist .row { padding-inline: 16px; }
   .slist .row .k { inline-size: 92px; flex: none; color: var(--cds-text-secondary); }
+  /* The key is a label and the value is a figure, so the value is set against
+     the right edge. A column of numbers reads down only when every number
+     ends at the same point. */
   .slist .row .v {
-    flex: 1; min-inline-size: 0; word-break: break-word;
+    flex: 1; min-inline-size: 0; word-break: break-word; text-align: end;
     font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   }
   /* The trust and lifecycle badges. Carbon's tag, at the 18px height, with
@@ -1171,17 +1215,16 @@
   <span class="brand">
     <svg viewBox="-26 -26 652 652" aria-hidden="true">
       <g fill="none" stroke="#f4f4f4" stroke-width="44" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M530 70L530 230Q530 300 460 300L300 300"/>
-        <path d="M70 70L230 70Q300 70 300 140L300 300"/>
-        <path d="M300 300L300 530"/>
-        <path d="M530 530L70 530"/>
+        <path d="M70 530 L530 530"/>
+        <path d="M70 530 L70 300"/>
+        <path d="M300 530 L300 140"/>
+        <path d="M530 530 L530 380"/>
       </g>
       <g stroke="#f4f4f4" stroke-width="44">
-        <circle cx="530" cy="70" r="60" fill="#f1c21b"/>
-        <circle cx="70" cy="70" r="60" fill="#ff8389"/>
-        <circle cx="300" cy="300" r="60" fill="#ff8389"/>
-        <circle cx="530" cy="530" r="60" fill="#78a9ff"/>
-        <circle cx="70" cy="530" r="60" fill="#ffffff"/>
+        <circle cx="70" cy="300" r="60" fill="#f1c21b"/>
+        <circle cx="300" cy="140" r="60" fill="#ff8389"/>
+        <circle cx="530" cy="380" r="60" fill="#78a9ff"/>
+        <circle cx="300" cy="530" r="60" fill="#ffffff"/>
       </g>
     </svg>
     Parquet View
@@ -1199,9 +1242,9 @@
        shards, and the browser needs a different input for each. Both are
        labels bound to an input, so the browser opens the dialog natively, on a
        real click. -->
-  <span class="divider"></span>
   <label class="hdr-action" id="btnPickFile" for="pickFile" title="Choose one Parquet file"
          role="button" tabindex="0" aria-label="Choose one Parquet file"></label>
+  <span class="divider"></span>
   <label class="hdr-action" id="btnPickDir" for="pickDir" title="Choose a folder of shards"
          role="button" tabindex="0" aria-label="Choose a folder of shards"></label>
 </div>
@@ -1261,7 +1304,7 @@
           <div class="flist" id="shardBox"></div>
         </cds-accordion-item>
 
-        <cds-accordion-item title="How this works">
+        <cds-accordion-item title="Help">
           <div class="pad">
             <p class="note">
               The viewer reads the footer of each file first, which holds the
@@ -3468,6 +3511,7 @@ vmbCnCfH5TJKTBFva0O4Wl+l/Ix13xO6KCJPD5H51fete+aO/R8EyzZRoN8BAA==`,At;function Lr
     sel: -1,
     selField: null,
     query: "",
+    colW: {},          /* widths that a reader pulled, by column */
     scan: null,
     hits: [],
     hitSel: -1,
@@ -3844,6 +3888,68 @@ vmbCnCfH5TJKTBFva0O4Wl+l/Ix13xO6KCJPD5H51fete+aO/R8EyzZRoN8BAA==`,At;function Lr
     return 360;
   }
 
+  /* What the reader pulled it to, or what its type asks for. */
+  function colWidth(f) {
+    return S.colW[f.name] || widthOf(f);
+  }
+
+  /* Excel's own gesture, on a table whose layout is fixed. The width lives on
+     the column element, so one number moves the whole column, and the rows
+     are not rendered again while the edge moves. A double click returns the
+     column to the width that its type asks for. */
+  var pull = null;
+
+  $("grid").addEventListener("pointerdown", function (ev) {
+    var grip = ev.target.closest ? ev.target.closest(".grip") : null;
+    if (!grip) { return; }
+    var th = grip.parentNode;
+    ev.preventDefault();
+    ev.stopPropagation();
+    pull = { name: th.getAttribute("data-f"), grip: grip, x: ev.clientX,
+             w: th.getBoundingClientRect().width, moved: false };
+    grip.setAttribute("data-on", "1");
+    document.body.setAttribute("data-resizing", "1");
+    grip.setPointerCapture(ev.pointerId);
+  });
+
+  $("grid").addEventListener("pointermove", function (ev) {
+    if (!pull || pull.swallow) { return; }
+    var w = Math.round(clamp(pull.w + (ev.clientX - pull.x), 56, 1600));
+    if (w !== S.colW[pull.name]) { pull.moved = true; }
+    S.colW[pull.name] = w;
+    setColWidths();
+  });
+
+  function endPull() {
+    if (!pull) { return; }
+    pull.grip.removeAttribute("data-on");
+    document.body.removeAttribute("data-resizing");
+    /* A click follows a press, so the click that ends a column drag is
+       swallowed before it reaches the heading. */
+    pull = pull.moved ? { name: null, swallow: true } : null;
+    if (pull) { setTimeout(function () { pull = null; }, 0); }
+  }
+  $("grid").addEventListener("pointerup", endPull);
+  $("grid").addEventListener("pointercancel", endPull);
+
+  $("grid").addEventListener("dblclick", function (ev) {
+    var grip = ev.target.closest ? ev.target.closest(".grip") : null;
+    if (!grip) { return; }
+    ev.preventDefault();
+    ev.stopPropagation();
+    delete S.colW[grip.parentNode.getAttribute("data-f")];
+    setColWidths();
+  });
+
+  /* Only the column elements change, so the rows stay untouched. */
+  function setColWidths() {
+    var cols = $("grid").querySelectorAll("colgroup col");
+    var fields = shownFields();
+    fields.forEach(function (f, i) {
+      if (cols[i + 1]) { cols[i + 1].style.width = colWidth(f) + "px"; }
+    });
+  }
+
   function renderTable() {
     var fields = shownFields();
     var grid = $("grid");
@@ -3853,13 +3959,14 @@ vmbCnCfH5TJKTBFva0O4Wl+l/Ix13xO6KCJPD5H51fete+aO/R8EyzZRoN8BAA==`,At;function Lr
       return;
     }
     var head = ['<colgroup><col style="width:96px">'];
-    fields.forEach(function (f) { head.push('<col style="width:' + widthOf(f) + 'px">'); });
+    fields.forEach(function (f) { head.push('<col style="width:' + colWidth(f) + 'px">'); });
     head.push("</colgroup>");
     head.push('<thead><tr><th class="n">row</th>');
     fields.forEach(function (f) {
       head.push('<th data-f="' + esc(f.name) + '" data-sel="' + (S.selField === f.name ? 1 : 0) +
                 '" title="' + esc(f.name + "  " + f.type) + '">' + esc(f.name) +
-                '<span class="ty">' + esc(f.type) + "</span></th>");
+                '<span class="ty">' + esc(f.type) + "</span>" +
+                '<span class="grip" title="Pull the edge to set the width. Two clicks give it back."></span></th>');
     });
     head.push("</tr></thead><tbody>");
     S.rows.forEach(function (row, i) {
@@ -3954,9 +4061,20 @@ vmbCnCfH5TJKTBFva0O4Wl+l/Ix13xO6KCJPD5H51fete+aO/R8EyzZRoN8BAA==`,At;function Lr
   function renderInspector() {
     var host = $("inspector");
     if (!S.shards.length) { host.innerHTML = ""; return; }
-    if (S.sel >= 0 && S.rows[S.sel]) { host.innerHTML = rowPanel(); return; }
-    if (S.selField) { host.innerHTML = fieldPanel(S.selField); return; }
-    host.innerHTML = datasetPanel();
+    if (S.sel >= 0 && S.rows[S.sel]) { host.innerHTML = rowPanel(); }
+    else if (S.selField) { host.innerHTML = fieldPanel(S.selField); }
+    else { host.innerHTML = datasetPanel(); }
+    sizeValues();
+  }
+
+  /* A long value opens at a height that can be read, and it can be pulled
+     taller from there. The height is set here, in script, for two reasons.
+     A box with a maximum height cannot be pulled past it, and a fixed height
+     would leave an empty box under a short value. */
+  function sizeValues() {
+    Array.prototype.forEach.call($("inspector").querySelectorAll(".val .v"), function (el) {
+      if (el.scrollHeight > 260) { el.style.blockSize = "260px"; el.className += " tall"; }
+    });
   }
 
   function head(title, sub) {
@@ -4098,7 +4216,7 @@ vmbCnCfH5TJKTBFva0O4Wl+l/Ix13xO6KCJPD5H51fete+aO/R8EyzZRoN8BAA==`,At;function Lr
       ];
       out += sect(path === name ? "The column" : path, rows2(pairs));
     });
-    out += sect("Where this comes from",
+    out += sect("Source",
       '<p>Every figure above is read from the footers of the files. No row of the dataset was read to produce it.</p>');
     return out;
   }
@@ -4378,6 +4496,8 @@ vmbCnCfH5TJKTBFva0O4Wl+l/Ix13xO6KCJPD5H51fete+aO/R8EyzZRoN8BAA==`,At;function Lr
   });
 
   $("grid").addEventListener("click", function (ev) {
+    if (pull && pull.swallow) { return; }
+    if (ev.target.closest && ev.target.closest(".grip")) { return; }
     var th = ev.target.closest ? ev.target.closest("th[data-f]") : null;
     if (th) {
       var f = th.getAttribute("data-f");
