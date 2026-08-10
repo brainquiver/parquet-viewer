@@ -1338,17 +1338,13 @@
         <cds-accordion-item title="Help">
           <div class="pad">
             <p class="note">
-              The viewer reads the footer of each file first, which holds the
-              schema, the row count and the statistics of every column. That
-              is a few kilobytes, so a folder of shards opens in about the
-              time it takes to list it.
+              The viewer reads only the footer of each file first. A footer is
+              a few kilobytes, so a folder of shards opens quickly.
             </p>
             <p class="note">
-              A page of rows is read on demand, and only for the columns on
-              show. Parquet keeps its rows in groups, so the reader takes the
-              pages it needs from the group that holds the row you asked for,
-              and leaves the rest of the file alone. Each file is read in
-              parts, and your files stay in this browser tab.
+              The viewer reads a page of rows when you ask for it, and only
+              the columns on show. It skips the rest of the file, and your
+              files stay in this browser tab.
             </p>
           </div>
         </cds-accordion-item>
