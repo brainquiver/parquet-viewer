@@ -1,0 +1,11 @@
+# macOS metadata files
+._*
+.DS_Store
+
+# Test pages from tools/build-test-page.py. Each one is a copy of the page
+# with a sample dataset inside it, so it is large and generated.
+_test-page.html
+
+# The Python bytecode cache
+__pycache__/
+*.pyc
