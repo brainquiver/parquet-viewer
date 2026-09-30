@@ -12,10 +12,19 @@ supervised:
   at: 2026-09-29T16:55:00Z
 edited:
   by: claude-code/opus-5.5
-  at: 2026-09-30T20:35:50Z
+  at: 2026-09-30T21:46:31Z
 ---
 
 # Parquet Viewer
+
+[![Tests](https://img.shields.io/github/actions/workflow/status/brainquiver/parquet-viewer/tests.yml?branch=main&event=push&style=for-the-badge&logo=githubactions&logoColor=white&label=tests)](https://github.com/brainquiver/parquet-viewer/actions/workflows/tests.yml)
+[![Licence](https://img.shields.io/github/license/brainquiver/parquet-viewer?style=for-the-badge&color=blue&label=licence)](LICENSE)
+[![Node](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbrainquiver%2Fparquet-viewer%2Fmain%2Fpackage.json&query=%24.engines.node&label=node&logo=nodedotjs&logoColor=white&color=339933&style=for-the-badge)](package.json)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Apache Parquet](https://img.shields.io/badge/Apache_Parquet-50ABF1?style=for-the-badge&logo=apacheparquet&logoColor=white)
+![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)
 
 `parquet-viewer.html` is a single HTML page that opens a Parquet file, or a whole folder of shards as one dataset. It runs straight from the disk in any modern browser, and the files stay in that browser tab.
 
