@@ -14,7 +14,7 @@ supervised:
 
 # Parquet Viewer
 
-`parquet-viewer.html` is a single HTML page that opens a Parquet file, or a whole folder of shards as one dataset. It runs straight from the disk in any modern browser, and your files stay in that browser tab.
+`parquet-viewer.html` is a single HTML page that opens a Parquet file, or a whole folder of shards as one dataset. It runs straight from the disk in any modern browser, and the files stay in that browser tab.
 
 It reads the footer of each file first, which holds the schema, the row count and the statistics of every column. A folder of 435 shards opens in under a second, and rows load one page at a time.
 
