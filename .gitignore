@@ -9,3 +9,6 @@ _test-page.html
 # The Python bytecode cache
 __pycache__/
 *.pyc
+
+# The test packages, which npm ci installs from package-lock.json
+node_modules/

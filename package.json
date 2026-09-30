@@ -1,0 +1,17 @@
+{
+  "name": "parquet-viewer",
+  "private": true,
+  "description": "The unit tests of parquet-viewer.html. The page itself needs no build and no package.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "hyparquet-writer": "0.16.10",
+    "vitest": "5.0.3"
+  }
+}
