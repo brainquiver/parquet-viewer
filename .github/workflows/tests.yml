@@ -16,8 +16,44 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # A change to documents alone skips the unit jobs. No test reads a .md file or the LICENSE, so
+  # those count as documents, and every other file counts as code. This job and the gate at the
+  # end are short, so they run on GitHub.
+  changes:
+    name: Changes
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    outputs:
+      code: ${{ steps.diff.outputs.code }}
+    steps:
+      # Pinned to a commit, because a tag can be moved to other code.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          # The parent of the merge commit of a pull request is the tip of main, and so is the
+          # parent of a squash merge on main. One diff then serves both events.
+          fetch-depth: 2
+      - id: diff
+        env:
+          EVENT: ${{ github.event_name }}
+        run: |
+          code=false
+          if [ "$EVENT" != pull_request ] && [ "$EVENT" != push ]; then code=true; fi
+          files=$(git diff --name-only HEAD^1 HEAD) || code=true
+          [ -n "$files" ] || code=true
+          while IFS= read -r file; do
+            case "$file" in
+              *.md | LICENSE) ;;
+              *) code=true ;;
+            esac
+          done <<< "$files"
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          echo "Changed files:"; echo "$files"; echo "Code changed: $code"
+
   unit:
     name: Unit (Node ${{ matrix.node }})
+    needs: changes
+    if: needs.changes.outputs.code == 'true'
     # Blacksmith for pushes to main and for pull requests. A Dependabot pull request stays on
     # GitHub, on the Ubuntu 24.04 of the Blacksmith runner, because a routine update gains
     # nothing from a faster runner. The test reads who opened the pull request, so a manual
@@ -41,3 +77,23 @@ jobs:
       - run: npm ci
       # One test also runs tools/build-test-page.py, with the Python 3 of the runner.
       - run: npm test
+
+  # The ruleset requires this job, and not the unit jobs. A workflow that a path filter skips
+  # leaves its required checks waiting, and a skipped matrix job does not report the names of its
+  # matrix. This job reports in both cases: it passes when the code changed and every unit job
+  # passed, or when only documents changed and the unit jobs were skipped.
+  gate:
+    name: Tests
+    needs: [changes, unit]
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    steps:
+      - env:
+          CHANGES: ${{ needs.changes.result }}
+          CODE: ${{ needs.changes.outputs.code }}
+          RESULT: ${{ needs.unit.result }}
+        run: |
+          echo "Changes: $CHANGES. Code changed: $CODE. unit: $RESULT."
+          [ "$CHANGES" = success ]
+          if [ "$CODE" = true ]; then [ "$RESULT" = success ]; else [ "$RESULT" = skipped ]; fi
