@@ -18,7 +18,7 @@ edited:
 # Parquet Viewer
 
 [![Tests](https://img.shields.io/github/actions/workflow/status/brainquiver/parquet-viewer/tests.yml?branch=main&event=push&style=for-the-badge&logo=githubactions&logoColor=white&label=tests)](https://github.com/brainquiver/parquet-viewer/actions/workflows/tests.yml)
-[![Licence](https://img.shields.io/github/license/brainquiver/parquet-viewer?style=for-the-badge&color=blue&label=licence)](LICENSE)
+[![License](https://img.shields.io/github/license/brainquiver/parquet-viewer?style=for-the-badge&color=blue&label=licence)](LICENSE)
 [![Node](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbrainquiver%2Fparquet-viewer%2Fmain%2Fpackage.json&query=%24.engines.node&label=node&logo=nodedotjs&logoColor=white&color=339933&style=for-the-badge)](package.json)
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -49,7 +49,7 @@ It reads the footer of each file first, which holds the schema, the row count an
     npm ci                                                # the test packages, from package-lock.json
     npm test                                              # the unit tests
 
-The viewer itself is just the page. `tools/build-test-page.py` needs Python 3, and `tools/build-reader.sh` needs `npm` and a network connection. The script prints the path of the new reader bundle, which replaces the code between the `<script>` tags after the licence notice in the page. The tests need Node.js 22.12 or later, and Python 3 for the test of `tools/build-test-page.py`.
+The viewer itself is just the page. `tools/build-test-page.py` needs Python 3, and `tools/build-reader.sh` needs `npm` and a network connection. The script prints the path of the new reader bundle, which replaces the code between the `<script>` tags after the license notice in the page. The tests need Node.js 22.12 or later, and Python 3 for the test of `tools/build-test-page.py`.
 
 ### 1.1 Tests
 
