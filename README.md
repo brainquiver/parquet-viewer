@@ -18,7 +18,7 @@ edited:
 # Parquet Viewer
 
 [![Tests](https://img.shields.io/github/actions/workflow/status/brainquiver/parquet-viewer/tests.yml?branch=main&event=push&style=for-the-badge&logo=githubactions&logoColor=white&label=tests)](https://github.com/brainquiver/parquet-viewer/actions/workflows/tests.yml)
-[![License](https://img.shields.io/github/license/brainquiver/parquet-viewer?style=for-the-badge&color=blue&label=licence)](LICENSE)
+[![License](https://img.shields.io/github/license/brainquiver/parquet-viewer?style=for-the-badge&color=blue&label=license)](LICENSE)
 [![Node](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbrainquiver%2Fparquet-viewer%2Fmain%2Fpackage.json&query=%24.engines.node&label=node&logo=nodedotjs&logoColor=white&color=339933&style=for-the-badge)](package.json)
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
