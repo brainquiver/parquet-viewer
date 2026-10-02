@@ -1,7 +1,7 @@
 ---
 type: Repository Guide
 title: Parquet Viewer
-description: An offline single page viewer for Parquet files and folders of shards.
+description: Offline single-page viewer for Parquet files and sharded datasets.
 status: stable
 tags: [data, parquet, browser]
 generated:
@@ -12,7 +12,7 @@ supervised:
   at: 2026-09-29T16:55:00Z
 edited:
   by: claude-code/opus-5.5
-  at: 2026-09-30T21:46:31Z
+  at: 2026-10-02T17:54:03Z
 ---
 
 # Parquet Viewer
