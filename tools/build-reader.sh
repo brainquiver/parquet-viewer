@@ -5,7 +5,7 @@
 # anything when it runs. The reader is therefore bundled into it.
 # This script fetches hyparquet, fzstd and hyparquet-compressors, bundles
 # them as one classic script that sets window.PQ, and prints its path.
-# Paste the bundle between the <script> tags after the licence notice.
+# Paste the bundle between the <script> tags after the license notice.
 #
 #   sh tools/build-reader.sh
 #
