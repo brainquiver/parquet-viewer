@@ -11,7 +11,7 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "hyparquet-writer": "0.16.10",
-    "vitest": "5.0.3"
+    "hyparquet-writer": "0.17.0",
+    "vitest": "5.0.5"
   }
 }
